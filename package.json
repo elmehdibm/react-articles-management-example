@@ -1,0 +1,41 @@
+{
+  "name": "reactjs-project-webpack-based",
+  "version": "0.0.1",
+  "description": "Formation Purpose",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config ./webpack.config.dev.js --mode development",
+    "build": "webpack --mode production"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.5.0",
+    "@babel/plugin-proposal-class-properties": "^7.5.0",
+    "@babel/plugin-transform-runtime": "^7.5.0",
+    "@babel/preset-env": "^7.5.2",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/runtime": "^7.5.2",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "bootstrap": "^4.3.1",
+    "css-loader": "^3.0.0",
+    "file-loader": "^4.0.0",
+    "font-awesome": "^4.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^2.0.1",
+    "webpack": "4.19.1",
+    "webpack-cli": "3.1.1",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
