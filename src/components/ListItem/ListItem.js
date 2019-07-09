@@ -18,6 +18,9 @@ const ListItem = ({
                     decrement={decrementItem(item)}
                 />);
             })}
+            <span> Add Here the new item </span>
+            <input placeholder="title" type="text"/>
+            
         </div>
     )
 }
