@@ -36,7 +36,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.svg$/,
+                test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
                 loader: 'file-loader',
                 query: {
                     name: 'static/media/[name].[hash:8].[ext]'

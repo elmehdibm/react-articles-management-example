@@ -16,10 +16,19 @@ const ListItem = ({
                     decrement={decrementItem(item)}
                 />);
             })}
-            <span> Add Here the new item </span>
-            <input placeholder="title" type="text"/>
-            <input placeholder="quantity" type="number"/>
-            <input placeholder="price" type="number"/>
+            <div
+                className="input-group mb-3"
+                style={{"padding": "8px"}}
+            >
+                <div className="input-group-prepend">
+                    <span className="input-group-text">Article</span>
+                </div>
+                <input type="text" className="form-control" placeholder="Name" />
+                <input type="text" className="form-control" placeholder="Quantity" />
+                <input type="text" className="form-control" placeholder="Price" />
+                <input type="submit" className="btn btn-primary" value="Create" />
+
+            </div>
         </div> 
     )
 }
