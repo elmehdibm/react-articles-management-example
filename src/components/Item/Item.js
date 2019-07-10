@@ -2,32 +2,31 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Item = ({
-    title,
-    quantity,
-    price,
+    item,
     increment,
     decrement
 }) => {
     return (
         <div>
-            <ul>
-                <li className="fa fa-plus">
-                    <span className='badge badge-primary m-2'>
-                        {title}
+            <ul class="nav nav-pills nav-justified">
+                <li class="nav-item">
+                    <h3><span className='badge badge-pill badge-primary'>
+                        {item.title}
                     </span>
+                    </h3>
                 </li>
-                <li className="fa fa-plus">
-                    {(quantity === 0 ? "Out of Stock" : quantity)}
+                <li class="nav-item">
+                    {(item.quantity === 0 ? "Out of Stock" : item.quantity)}
                 </li>
-                <li className="fa fa-plus">
-                    {`${price} MAD`}
+                <li class="nav-item">
+                    {`${item.price} MAD`}
                 </li>
-                <li className="fa fa-plus">
+                <li class="nav-item">
                     <button className="btn btn-secondary btn-sm" onClick={increment}>
                         increment
                     </button>
                 </li>
-                <li className="fa fa-plus">
+                <li class="nav-item">
                     <button className="btn btn-secondary btn-sm" onClick={decrement}>
                         decrement
                     </button>

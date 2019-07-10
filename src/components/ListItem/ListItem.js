@@ -11,17 +11,16 @@ const ListItem = ({
         <div>
             {listItem.map((item) => {
                 return (<Item
-                    title={item.title}
-                    quantity={item.quantity}
-                    price={item.price}
+                    item={item}
                     increment={incrementItem(item)}
                     decrement={decrementItem(item)}
                 />);
             })}
             <span> Add Here the new item </span>
             <input placeholder="title" type="text"/>
-            
-        </div>
+            <input placeholder="quantity" type="number"/>
+            <input placeholder="price" type="number"/>
+        </div> 
     )
 }
 
