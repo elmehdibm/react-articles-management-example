@@ -31,6 +31,7 @@ const ListItem = ({
                         <span className="input-group-text">Article</span>
                     </div>
                     <input
+                        name="name"
                         type="text"
                         className="form-control"
                         placeholder="Name"
@@ -38,6 +39,7 @@ const ListItem = ({
                         onChange={onInputChange('name')}
                     />
                     <input
+                        name="quantity"
                         type="text"
                         className="form-control"
                         placeholder="Quantity"
@@ -45,6 +47,7 @@ const ListItem = ({
                         onChange={onInputChange('quantity')}
                     />
                     <input
+                        name="price"
                         type="text"
                         className="form-control"
                         placeholder="Price"

@@ -20,6 +20,7 @@ const AppBar = props => {
                         "borderRadius": "10px"
                     }}/>
                     <h3
+                        id="header-title"
                         className="text-white"
                         style={{
                         "display": "inline-block",

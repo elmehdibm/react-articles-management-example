@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.config.dev.js --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "unit": "jest --config=jest.config.js",
+    "e2e": "jest --config=jest.e2e.config.js"
   },
   "license": "MIT",
   "devDependencies": {
@@ -23,10 +25,13 @@
     "css-loader": "^3.0.0",
     "file-loader": "^4.0.0",
     "font-awesome": "^4.7.0",
+    "geckodriver": "^1.16.2",
     "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.8.0",
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
     "sass-loader": "^7.1.0",
+    "selenium-webdriver": "^4.0.0-alpha.4",
     "style-loader": "^0.23.1",
     "url-loader": "^2.0.1",
     "webpack": "4.19.1",

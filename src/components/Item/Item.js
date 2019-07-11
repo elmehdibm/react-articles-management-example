@@ -10,30 +10,30 @@ const Item = ({
     return (
         <div>
             <ul className="nav nav-pills nav-justified">
-                <li className="nav-item">
+                <li className="nav-item" id={"title-"+item.id}>
                     <h3><span className='badge badge-pill badge-primary'>
                         {item.title}
                     </span>
                     </h3>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" id={"quantity-"+item.id}>
                     {(item.quantity === 0 ? <div style={{"color":"red"}}>Out of Stock</div> : item.quantity)}
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" id={"price-"+item.id}>
                     {`${item.price} MAD`}
                 </li>
                 <li className="nav-item">
-                    <button className="btn btn-secondary btn-sm" onClick={increment}>
+                    <button className="btn btn-secondary btn-sm" onClick={increment} id={"increment-"+item.id}>
                         INCREMENT
                     </button>
                 </li>
                 <li className="nav-item">
-                    <button className="btn btn-secondary btn-sm" onClick={decrement}>
+                    <button className="btn btn-secondary btn-sm" onClick={decrement} id={"decrement-"+item.id}>
                         DECREMENT
                     </button>
                 </li>
                 <li className="nav-item">
-                    <button className="btn btn-danger btn-sm" onClick={remove}>
+                    <button className="btn btn-danger btn-sm" onClick={remove} id={"remove-"+item.id}>
                         DELETE
                     </button>
                 </li>
